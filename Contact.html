@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - John Doe</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #333, #555);
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #444;
+            color: #fff;
+        }
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: white;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .content h2 {
+            text-align: center;
+            color: #16a085;
+            margin-bottom: 30px;
+        }
+        .contact-form {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: #16a085;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background: #1abc9c;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+            .header {
+                padding: 40px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Project.html">Projects</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <div class="header" id="contact">
+        <img src="https://media.istockphoto.com/id/1451587807/vector/user-profile-icon-vector-avatar-or-person-icon-profile-picture-portrait-symbol-vector.jpg?s=612x612&w=0&k=20&c=yDJ4ITX1cHMh25Lt1vI1zBn2cAKKAlByHBvPJ8gEiIg=" alt="Profile Image">
+        <h1>Contact Me</h1>
+        <p>Get in touch with me</p>
+    </div>
+
+    <div class="content">
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="mailto:john.doe@example.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Made bt Tanzila | 2021-ag-7745</p>
+    </div>
+
+</body>
+</html>
